@@ -1,10 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
 @font-face {
     font-family: 'Myriad Pro Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Myriad Pro Regular'), url('./fonts/MYRIADPRO-REGULAR.woff ') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway-Bold'), url('./fonts/static/Raleway-Bold.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway-Regular'), url('./fonts/static/Raleway-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway-SemiBold'), url('./fonts/static/Raleway-SemiBold.ttf') format('woff');
 }
 
 * {
@@ -21,13 +43,17 @@
     display: none;
 }
 
+.header {
+    background-color: #e1f3fd;
+
+}
 
 .img1 img {
     width: 100%;
 }
 
 .img2 img {
-    width: 100%;
+    width: 100%
 }
 
 .home {
@@ -40,10 +66,17 @@
     background-color: #e1f3fd;
 }
 
+.text p {
+    font-family: 'Raleway-Regular';
+}
+
 .text {
     color: #000000;
-    margin: 0 0 0 71px;
     padding-top: 50px;
+}
+
+.navbar ul {
+    font-family: 'Raleway-SemiBold';
 }
 
 .text1 h3 {
@@ -90,6 +123,7 @@
 .service h1 {
     margin: 20px 0 10px 0;
     font-size: 20px;
+    font-family: 'Raleway-SemiBold';
 }
 
 .service p {
@@ -98,8 +132,9 @@
 }
 
 .company h1 {
-    font-size: 23px;
+    font-size: 32px;
     padding-top: 25px;
+    font-family: 'Raleway-SemiBold';
 }
 
 .text h3 {
@@ -110,9 +145,9 @@
 .box {
     max-width: 410px;
     font-family: 'Raleway', sans-serif;
-    padding: 30px 30px 60px 30px;
+    padding: 12px 6px 25px 10px;
     border: #fff 0px none;
-    box-shadow: 0px 0px 16px 0px #ffff00;
+    box-shadow: 14px 25px 7px -17px #ffff00;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -128,6 +163,7 @@
     text-decoration: none;
     color: #000000;
     margin-top: 20px;
+    line-height: 30px;
 }
 
 .seemore {
@@ -250,6 +286,7 @@ textarea {
 .news input {
     width: 65%;
     border-radius: 0px;
+    border: none;
 }
 
 
@@ -270,6 +307,7 @@ textarea {
 .location h3 {
     margin: 5px 25px;
     color: #fff;
+    font-size: 12px;
 }
 
 .contact {
@@ -304,7 +342,7 @@ textarea {
 }
 
 .info img {
-    width: 55%;
+    padding-right: 22px;
 }
 
 .news a {
@@ -319,12 +357,18 @@ textarea {
 
 .jigs h1 {
     padding-top: 20px;
+    font-family: 'Raleway-SemiBold';
+}
+
+.add {
+    display: flex;
 }
 
 .sub {
     background-color: #ffff00;
-    padding: 10px 0px;
+    padding: 9px 0px;
     margin: 0px;
+    border: none;
 }
 
 .nakso img {
@@ -357,11 +401,54 @@ textarea {
     .s1 {
         margin: 36px 50px 35px 118px;
     }
+
+    .p img {
+        padding-left: 70px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .text p {
         font-size: 18px;
+    }
+
+    .text {
+        margin: 0 0 0 71px;
+    }
+
+    .div1 {
+        padding-left: 165px;
+    }
+
+    .s1 {
+        margin: 36px 50px 35px 150px;
+    }
+
+    .p img {
+        padding-left: 240px;
+    }
+
+    .abc {
+        padding: 48px 0 0px 80px;
+
+    }
+
+    .call {
+        padding: 30px 232px;
+    }
+
+    form {
+        padding-left: 240px;
+    }
+
+    .nakso img {
+        width: 77%;
+        padding: 0px 0 33px 84px;
+    }
+
+    .info {
+        max-width: 468px;
+        padding-left: 105px;
     }
 }
 
@@ -372,6 +459,10 @@ textarea {
 
     .mainheader {
         background-color: #e1f3fd;
+    }
+
+    .div1 {
+        padding-left: 0;
     }
 
     .header {
@@ -401,6 +492,19 @@ textarea {
         font-size: 15px;
     }
 
+    .p img {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    form {
+        padding-left: 0px;
+    }
+
+    .call {
+        padding: 30px 0px;
+    }
+
     .container {
         padding: 0px 50px;
         margin: 0 auto;
@@ -408,9 +512,19 @@ textarea {
         width: 100%;
     }
 
+    .info img {
+        padding-right: 22px;
+    }
+
     .text {
         text-align: justify;
         max-width: 50%;
+        font-family: 'Myriad Pro Regular';
+
+    }
+
+    .img1 img {
+        width: 124%;
     }
 
     .text1 {
@@ -428,6 +542,12 @@ textarea {
     .yes {
         display: flex;
         gap: 30px;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+
+    .abc {
+        padding-bottom: 50px;
     }
 
     .man {
@@ -448,25 +568,21 @@ textarea {
 
     .text p {
         font-size: 18px;
+        line-height: 25px;
     }
 
     .jigs {
-        padding: 50px 325px;
+        padding: 50px 193px;
         text-align: center;
         font-family: 'Raleway', sans-serif;
     }
 
     .contactus {
         background-color: #fff;
-        padding: 13px;
-        border-radius: 15px;
-        margin: 50px 0px 0px 0px;
-    }
-
-    .contactus {
         padding: 13px 20px;
-        font-size: 15px;
         border-radius: 9px;
+        margin: 50px 0px 0px 0px;
+        font-size: 15px;
     }
 
     .text1 {
@@ -513,11 +629,8 @@ textarea {
 
     .abc p {
         padding-top: 80px;
+        line-height: 20px;
 
-    }
-
-    .man img {
-        width: 75%;
     }
 
     input {
@@ -526,28 +639,87 @@ textarea {
         border-radius: 9px;
     }
 
+    .jigs p {
+        padding: 30px 0px 9px 0px;
+    }
+
     .detail {
         display: flex;
         justify-content: space-between;
-
-    }
-
-    input#mail {
-        width: 60%;
-        padding: 10px;
-        border-radius: 0px;
+        padding: 70px 0;
     }
 
     .sub {
-        padding: 11px 2px;
-        font-size: 10px;
+        padding: 9px 8px
     }
 
-    .info {
-        margin: 75px 0;
+    .location h3 {
+        margin: 0;
+        font-size: 18px;
     }
 
-    .info {
-        margin: 75px 53px;
+}
+
+/* input#mail {
+    width: 60%;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.sub {
+    padding: 11px 2px;
+    font-size: 10px;
+}
+
+.info {
+    margin: 75px 0;
+}
+
+.info {
+    margin: 75px 5px;
+}
+
+.nakso img {
+    width: 110%;
+    padding: 65px 0 0px 0px; }*/
+
+
+
+@media only screen and (min-width: 1366px) {
+    .text {
+        margin: 0px 0 0 130px;
+    }
+
+    .container {
+        padding: 0px 110px;
+    }
+
+    .nakso img {
+        width: 100%;
+        padding: 0px 0 0px 0px;
+    }
+
+    .img2 img {
+        padding: 50px 0 50px 230px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .abc {
+        padding: 48px 0 0px 130px;
+    }
+
+    .navbar ul {
+        gap: 90px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .logo {
+        padding-left: 50px;
+    }
+
+    .text1 h1 {
+        font-size: 76px;
     }
 }
