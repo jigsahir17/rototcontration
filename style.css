@@ -18,39 +18,9 @@
 }
 
 .mainheader {
-    background-color: #e1f3fd;
-}
-
-.header {
-    display: flex;
-    gap: 80px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.header a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.mainheader {
     display: none;
 }
 
-.navbar ul {
-    display: flex;
-    gap: 50px;
-}
-
-.navbar ul a li {
-    list-style-type: none;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-}
 
 .img1 img {
     width: 100%;
@@ -72,6 +42,8 @@
 
 .text {
     color: #000000;
+    margin: 0 0 0 71px;
+    padding-top: 50px;
 }
 
 .text1 h3 {
@@ -92,17 +64,19 @@
 
 .contactus {
     background-color: #fff;
-    padding: 4px;
-    border-radius: 15px;
+    padding: 9px;
+    border-radius: 6px;
     margin: 30px 0px 0px 0px;
-    font-size: 9px;
+    font-size: 10px;
+    border: none;
 }
 
 .quote {
     background-color: #ffff00;
-    padding: 4px;
-    border-radius: 15px;
-    font-size: 9px;
+    padding: 9px;
+    border-radius: 6px;
+    font-size: 10px;
+    border: none;
 }
 
 .ourser {
@@ -125,10 +99,12 @@
 
 .company h1 {
     font-size: 23px;
+    padding-top: 25px;
 }
 
-h3 {
+.text h3 {
     font-size: 15px;
+    color: #000000;
 }
 
 .box {
@@ -136,7 +112,7 @@ h3 {
     font-family: 'Raleway', sans-serif;
     padding: 30px 30px 60px 30px;
     border: #fff 0px none;
-    box-shadow: 0px 8px 16px 0px #daebf4;
+    box-shadow: 0px 0px 16px 0px #ffff00;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -144,12 +120,14 @@ h3 {
 .box h3 {
     text-decoration: none;
     color: #000000;
-    display: inline
+    display: inline;
+    font-size: 13px;
 }
 
 .box p {
     text-decoration: none;
     color: #000000;
+    margin-top: 20px;
 }
 
 .seemore {
@@ -160,44 +138,21 @@ h3 {
     margin: 60px 0px 180px 0px;
 }
 
-.s2 {
-    text-align: center;
-    padding: 15px 30px;
-    border: #fff 0px none;
-    border-radius: 15px;
-    background-color: #daebf4;
-    margin: 39px;
-}
-
 .s1 {
     text-align: center;
     padding: 15px 30px;
     border: #fff 0px none;
     border-radius: 15px;
     background-color: #ffff00;
-    margin: 39px;
-}
-
-.s1,
-.s2 a {
-    text-decoration: none;
-    color: #fff;
+    margin: 35px 50px 35px 69px;
 }
 
 .div1:hover .s1 {
-    background-color: rgb(255, 99, 71);
-}
-
-.div2:hover .s2 {
-    background-color: rgb(255, 99, 71);
+    background-color: #daebf4;
 }
 
 .div1:hover .box {
-    box-shadow: 0px 8px 16px 0px rgb(255, 99, 71);
-}
-
-.div2:hover .box {
-    box-shadow: 0px 8px 16px 0px rgb(255, 99, 71);
+    box-shadow: 0px 0px 16px 0px #daebf4;
 }
 
 .div1 {
@@ -214,7 +169,7 @@ h3 {
 
 .abc p {
     max-width: 500px;
-    padding: 45px 0px 60px 0px;
+    padding: 25px 0px 50px 0px;
 
 }
 
@@ -233,6 +188,10 @@ h3 {
     padding: 45px 0px 50px 0px;
 }
 
+.jigs {
+    text-align: center;
+}
+
 .man h3 {
     text-align: center;
 }
@@ -247,18 +206,23 @@ h3 {
 }
 
 .call {
-    padding: 0px 0px 40px 0px;
+    padding: 30px 0px;
 }
 
 input {
-    padding: 20px 50px 20px 20px;
-    margin: 15px;
-    border-radius: 15px;
+    padding: 10px 6px 8px 12px;
+    margin: 9px;
+    border-radius: 9px;
 }
 
 textarea {
-    margin: 20px;
-    border-radius: 15px;
+    margin: 9px;
+    border-radius: 9px;
+}
+
+.call h1 {
+
+    font-size: 19px;
 }
 
 .send {
@@ -266,20 +230,30 @@ textarea {
     padding: 15px 50px;
     border-radius: 40px;
     border: 0px #ffffff none;
+    margin: 11px;
+    color: white;
 }
 
 .footer {
     background-color: #2f2f30;
 }
 
-.detail {
-    display: flex;
-    justify-content: space-between;
-
+.location {
+    margin: 0px 0px 25px 0px;
+    padding-top: 25px;
 }
 
+.contact {
+    margin: 0px 0px 25px 0px;
+}
+
+.news input {
+    width: 65%;
+    border-radius: 0px;
+}
+
+
 .info {
-    margin: 75px 120px;
     max-width: 392px;
     color: #fff;
 }
@@ -322,12 +296,15 @@ textarea {
 }
 
 .mail h3 {
-    margin: 5px 25px;
     color: #fff;
 }
 
 .news input {
     margin: 0px;
+}
+
+.info img {
+    width: 55%;
 }
 
 .news a {
@@ -336,24 +313,92 @@ textarea {
 }
 
 .news h3 {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 8px 0px;
+    font-size: 12px;
+}
+
+.jigs h1 {
+    padding-top: 20px;
 }
 
 .sub {
     background-color: #ffff00;
-    padding: 20px 20px;
-    border-radius: 15px;
+    padding: 10px 0px;
     margin: 0px;
+}
+
+.nakso img {
+    width: 100%;
 }
 
 .nakso {
     margin: 75px 0px 75px 0px;
 }
 
+@media only screen and (min-width: 375px) {
+    .s1 {
+        margin: 36px 50px 35px 110px;
+    }
+
+    form {
+        padding-left: 50px;
+    }
+
+    .call {
+        padding: 30px 43px;
+    }
+
+    .p img {
+        padding-left: 33px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .s1 {
+        margin: 36px 50px 35px 118px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text p {
+        font-size: 18px;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
     .mainheader {
         display: initial;
+    }
+
+    .mainheader {
+        background-color: #e1f3fd;
+    }
+
+    .header {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 33px;
+    }
+
+    .navbar ul a li {
+        list-style-type: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
     }
 
     .container {
@@ -365,8 +410,7 @@ textarea {
 
     .text {
         text-align: justify;
-        margin: 80px 110px 0px 162px;
-        max-width: 600px;
+        max-width: 50%;
     }
 
     .text1 {
@@ -383,25 +427,27 @@ textarea {
 
     .yes {
         display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 30px;
     }
 
     .man {
         display: flex;
         justify-content: space-between;
-        gap: 65px;
         padding: 0px 0px 100px 0px;
     }
 
     .formm {
         text-align: center;
-        padding: 180px 400px;
+        padding: 84px 316px;
     }
 
     .quote {
-        padding: 13px;
+        padding: 13px 10px;
+        font-size: 15px;
+    }
+
+    .text p {
+        font-size: 18px;
     }
 
     .jigs {
@@ -418,41 +464,43 @@ textarea {
     }
 
     .contactus {
-        padding: 13px;
+        padding: 13px 20px;
+        font-size: 15px;
+        border-radius: 9px;
     }
 
     .text1 {
-        padding: 50px;
-        justify-content: space-between;
+        padding: 150px 0px;
     }
 
     .service h1 {
-        margin: 160px 0px 50px 0px;
+        margin: 77px 0px 36px 0px;
     }
 
     .service p {
-        margin: 0px 0px 130px 0px;
+        margin: 0px 0px 85px 0px;
     }
 
     .s1 {
         text-align: center;
         padding: 15px 30px;
         border-radius: 15px;
-        margin-top: 80px;
+        margin-left: 100px;
     }
 
     .s2 {
         text-align: center;
         padding: 15px 30px;
         border-radius: 15px;
-        margin-top: 80px;
+        margin-left: 100px;
     }
 
     .company {
         display: flex;
-        padding: 235px 100px;
+        padding: px 0px;
         justify-content: space-between;
         font-family: 'Raleway', sans-serif;
+        padding: 29px 0;
     }
 
     .service h1 {
@@ -466,5 +514,40 @@ textarea {
     .abc p {
         padding-top: 80px;
 
+    }
+
+    .man img {
+        width: 75%;
+    }
+
+    input {
+        padding: 20px 50px 20px 20px;
+        margin: 15px;
+        border-radius: 9px;
+    }
+
+    .detail {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    input#mail {
+        width: 60%;
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    .sub {
+        padding: 11px 2px;
+        font-size: 10px;
+    }
+
+    .info {
+        margin: 75px 0;
+    }
+
+    .info {
+        margin: 75px 53px;
     }
 }
